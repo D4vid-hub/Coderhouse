@@ -1,0 +1,26 @@
+div a {
+  text-decoration: none;
+  text-decoration-color: none; }
+
+ul li {
+  list-style: none; }
+
+nav a {
+  color: whitesmoke; }
+
+footer {
+  border-top: 2px orange solid;
+  background-color: gray; }
+  footer div {
+    color: white;
+    text-align: center; }
+
+.seleccion:hover {
+  box-shadow: 0 0 10px black; }
+
+.contacto {
+  font-size: small;
+  max-width: auto;
+  max-height: auto; }
+  .contacto h1 {
+    font-size: medium; }

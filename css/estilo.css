@@ -1,0 +1,404 @@
+body{
+	background: #fde6bb;
+}
+ul li{
+	list-style: none;
+}
+.contenedor1{
+	display:flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+.search{
+	display:inline-block;
+	margin:5px;
+	padding:5px;
+	width: auto;
+}
+.btn-primary {
+	background: $primary;
+}
+.redes-sociales{
+	display:flex;
+	justify-content: flex-start;
+	margin:10px;
+	padding:2px;
+}
+.redes-sociales i{
+	margin:5px;
+	padding:5px;
+	animation:"slideInLeft";
+	animation-duration: 3s;
+}
+.redes-sociales i:hover {
+	box-shadow: 0 0 10px;
+}
+.logo-empresa{
+	display:flex;
+	justify-content:center;
+	animation: "rubberBand";
+	animation-duration: 2s;
+}
+.slogan{
+	display:flex;
+	justify-content:center;
+	animation: "backInLeft";
+	animation-duration: 2s;
+}
+.menu{
+	display:flex;
+	justify-content:center;
+	border-bottom:solid 1px black;
+}
+.menu a{
+	text-decoration:none;
+	margin:10px;
+	padding:10px;
+	border:solid 1px orange;
+	color:black;
+	animation: "flipInY";
+	animation-duration: 3s;
+}
+.menu a:hover{
+	color:orange;
+	transform: translate(10px, 5px);
+}
+/*termino de encabezado*/
+/*inicio de cuerpo*/
+.cuerpo{
+	display:grid;
+	grid-template-areas:
+	"ofertas ofertas ofertas"
+	"hombre mujer niño";
+	grid-template-columns:300px 300px 300px;
+	grid-template-rows:500px 500px;
+	justify-content: center;
+	grid-row-gap:10px;
+	grid-column-gap:10px;
+	margin:0;
+}
+#ofertas{
+	grid-area: ofertas ;
+	border:solid 1px orange;
+	margin: 20px;
+	padding:5px;
+	text-align: center;
+}
+.eleccion{
+	margin:20px;
+	padding:5px;
+	border:solid 1px orange;
+}
+.eleccion a{
+	text-decoration:none;
+	color:black;
+	text-align:center;
+}
+.eleccion:hover {
+	box-shadow: 0 0 10px;
+}
+/*termino de cuerpo*/
+/*comienzo de pie de pagina*/
+.pie-de-pagina{
+	display:flex;
+	justify-content: space-between;
+	margin: 15px;
+	padding:5px;
+	border-top:solid 1px black;
+	justify-content: flex-start;
+}
+.pie-de-pagina img{
+	margin-right:50px;
+	padding: 5px;
+}
+.siguenos {
+	display:grid;
+	grid-template-areas:
+	"siguenos siguenos"
+	"face insta";
+	grid-template-columns:50px;
+	grid-template-rows:50px;
+	grid-row-gap:5px;
+	grid-column-gap: 5px;
+	height: 100px;
+	width: 100px;
+	padding:5px;
+	/* margin-left: 50px; */
+}
+.siguenos h2{
+	grid-area: siguenos;
+	text-align: center;
+	margin:5px;
+	padding:5px;
+}
+.siguenos h2:hover{
+	animation:"heartBeat";
+	animation-duration: 3s; 
+}
+#F {
+	grid-area: face;
+	margin:auto;
+	padding:5px;
+	text-align: center;
+}
+#I {
+	grid-area: insta;
+	margin:auto;
+	padding:5px;
+	text-align: center;
+}
+.contacto{
+	display:grid;
+	grid-template-areas:
+	"contacto contacto"
+	"w numero"
+	"m correo";
+	grid-template-columns:1fr 2fr;
+	grid-template-rows:1fr 2fr;
+	grid-row-gap:0fr;
+	grid-column-gap: 1fr;
+	height: 150px;
+	padding:5px
+	/* margin:5px; */
+}
+.contacto h2{
+	grid-area: contacto;
+	text-align: center;
+}
+.contacto h2:hover{
+	animation:"heartBeat";
+	animation-duration: 3s;
+}
+#w {
+	grid-area: w;
+	text-align:center;
+	margin:1px;
+	padding-top:15px;
+	height:20px;
+}
+#numero{
+	grid-area: numero;
+	margin:1px;
+	padding-top:15px;
+	height:20px;
+}
+#m{
+	grid-area:m;
+	margin:1px;
+	padding-top:15px;
+	height:20px;
+	text-align: center;
+}
+
+#mail{
+	grid-area: correo;
+	margin:1px;
+	padding-top:15px;
+	height:20px;
+}
+/*termino de pie de pagina*/
+/*pagina mujer*/
+/*panel lateral*/
+.panel-lateral{
+	background: rgba(153, 112, 155, 0.884);
+	position:sticky;
+	top:0;
+	border: solid 1px orange;
+	max-width:250px;
+	margin:10px;
+	padding:5px;
+	max-height: 300px;
+} 
+.panel-lateral h1{
+	text-align: center;
+}
+
+.panel-lateral ul li :hover {
+	color:orange;
+	margin:10px;
+}
+.panel-lateral ul li a{
+	text-decoration:none;
+	color:orange;
+}
+/*seccion pagina*/
+.cuerpo-mujer h2{
+	text-align: center;
+
+}
+.cuerpo-mujer ul li{
+	list-style: none;
+}
+.cuerpo-grilla{
+	display: grid;
+	grid-template-areas:
+	"aside perfume"
+	"aside cremas"
+	"aside productos";
+	grid-template-columns:1fr 1fr;
+	grid-row-gap: 10px;
+	margin:10px;
+	justify-content: center;
+}
+.perfume {grid-area: perfume;}
+.perfume ul{
+	display:grid;
+	margin:5px;
+	padding:5px;
+	grid-template-columns:300px 300px 300px;
+	grid-template-rows:500px 50px;
+	grid-column-gap: 10px;
+	grid-row-gap:10px;
+	grid-template-areas: 
+	"imgk imgb imgh"
+	"kayak biografia humor";
+	justify-content: center;
+}
+.perfume div{
+	border:solid 1px orange;
+}
+.perfume ul li{
+	border:solid 1px orange;
+	border-radius: 10px;
+	position:relative;
+	bottom:60px;
+	background:#ebc7c0;
+	text-align: center;
+}
+#imgk{grid-area:imgk;}
+#imgb{ grid-area: imgb;}
+#imgh {grid-area: imgh;}
+#kayak {grid-area: kayak;}
+#biografia {grid-area: biografia;}
+#humor {grid-area: humor;}
+.cremas {
+	grid-area: cremas;
+}
+.cremas div{
+	border:solid 1px orange;
+}
+.cremas ul{
+	display:grid;
+	grid-template-columns:300px 300px;
+	grid-template-rows:500px 50px;
+	grid-template-areas:
+	"dive divt"
+	"lie lit";
+	grid-column-gap: 50px;
+	grid-row-gap:10px;
+	justify-content: center;
+}
+.cremas ul li{
+	border:solid 1px orange;
+	position:relative;
+	bottom: 60px;
+	background:#ebc7c0;
+}
+#imgeko { grid-area:dive;}
+#imgtodo { grid-area:divt;}
+#liekos { grid-area: lie;}
+#litodo {grid-area:lit;}
+.productos-cabello{ grid-area: productos;}
+.productos-cabello ul{
+	display: grid;
+	grid-template-areas: 
+	"imgkos imgplant imglumin"
+	"ekos plant lumina";
+	grid-template-columns:300px 300px 300px;
+	grid-template-rows:500px 50px;
+	grid-column-gap: 50px;
+	grid-row-gap:10px;
+}
+.productos-cabello ul li{
+	border:solid 1px orange;
+	position:relative;
+	bottom: 60px;
+	background:#ebc7c0;
+}
+.productos-cabello ul div{
+	border:solid 1px orange;
+}
+#ekos {grid-area: ekos}
+#plant {grid-area: plant}
+#lumina {grid-area: lumina}
+#imgkos{grid-area: imgkos}
+#imgplant {grid-area: imgplant}
+#imglumin {grid-area: imglumin}
+/*fin pagina mujer*/
+/*inico pagina niños y hombre*/
+tbody tr td a{ 
+	text-decoration: none;
+	color:orange;
+}
+.grilla-madre{
+	display:grid;
+	grid-template-areas:
+	"aside caja1"
+	"aside caja2"
+	"aside caja3"
+	"aside caja4"
+	"aside caja5"
+	"aside caja5"
+	"aside caja6"
+	"aside caja6"; 
+	grid-template-columns:300px 1fr;
+}
+.grilla-madre aside{
+	grid-area: aside;
+}
+.caja1, .caja2 ,.caja3, .caja4, .caja5, .caja6{
+	display: grid;
+	justify-content: center;
+	margin:10px;
+	text-align: center;
+}
+.caja1 ul, .caja2 ul, .caja3 ul, .caja4 ul,
+.caja5 ul, .caja6 ul{
+	list-style: none;
+	display: grid;
+	grid-template-areas: 
+	"up upp uppp"
+	"down downn downnn";
+	grid-template-columns:300px 300px 300px;
+	grid-template-rows:500px 50px;
+	grid-column-gap: 50px;
+	grid-row-gap:10px;
+}
+.caja1 ul li, .caja2 ul li,.caja3 ul li,
+.caja4 ul li, .caja5 ul li, .caja6 ul li{
+	border:solid 1px orange;
+	position:relative;
+	bottom: 60px;
+	background:#ebc7c0;
+}
+.caja1 div, .caja2 div,.caja3 div,
+.caja4 div, .caja5 div, .caja6 div{
+	border: solid 1px orange;
+}
+.up {
+	grid-area: up;}
+.up:hover{
+	animation:"pulse";
+	animation-duration: 2s;
+}
+
+.up1 {
+	grid-area: upp;
+}
+.up1:hover{
+	animation:"pulse";
+	animation-duration: 2s;
+}
+.up2 {
+	grid-area: uppp;
+}
+.up2:hover{
+	animation:"pulse";
+	animation-duration: 2s;
+}
+.down {grid-area: down}
+.down1 {grid-area: downn}
+.down2 {grid-area: downnn}
+/*pagina contacto*/
+.formulario {text-align: center;}
+
